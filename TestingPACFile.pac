@@ -1,6 +1,6 @@
 function FindProxyForURL(url, host)
 {
-  if (isInNet(host, "13.251.106.90", "255.255.255.255") {
+  if (localHostOrDomainIs(host, "www.ivanti.com")) {
       return "PROXY 192.168.225.52:8080";
   } else {
       return "DIRECT";
